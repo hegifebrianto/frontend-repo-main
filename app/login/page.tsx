@@ -18,8 +18,6 @@ export default function LoginPage() {
       setLoading(true);
       setError("");
       await submitLogin(email, password);
-      // await signInWithEmailAndPassword(auth, payload.email, payload.password);
-      // router.push('/');
     } catch (error) {
       console.error("Login error:", error);
       setError("Login failed. Please check your credentials.");
